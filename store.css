@@ -1,0 +1,148 @@
+/* .section-container {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} */
+body{
+  background-image: url("../images/landing/ciudad.png");
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+ .title-categories {
+  font-family: "Permanent Marker", cursive;
+  margin-bottom: 80px; 
+  font-weight: 900;
+  color: #002b5c;
+  text-align: center;
+  font-size: 50px;
+}
+.contenedor {
+  margin: 50px auto 100px;
+  width: 400px; /* medidas de imágenes */ /* original 250 y 200 */
+  height: 300px;
+  position: relative;
+  perspective: 1000px; /*1000 averiguar que hace ese comando */
+}
+.carousel1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.item { /* se va a aplciar a c/foto */
+  display: block;
+  position: absolute;
+  /* background: #000; */
+  width: 400px; /* medidas de imagnes */
+  height: 250px;
+  line-height: 200px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #FFF;/* color de letra */
+  /* opacity: 0.95; */
+  border-radius: 10px;
+}
+/* colocar imagenes */
+.a {
+  transform: rotateY(0deg) translateZ(400px);
+  background-image: url("../images/categories/redbull.jpg");
+}
+.b {
+  transform: rotateY(60deg) translateZ(400px);
+  background-image: url("../images/categories/chilango-skate1.jpg");
+}
+.c {
+  transform: rotateY(120deg) translateZ(400px);
+  background-image: url("../images/categories/chilango-skate2.jpg");
+}
+.d {
+  transform: rotateY(180deg) translateZ(400px);
+  background-image: url("../images/categories/chilango-skate12.jpg");
+}
+.e {
+  transform: rotateY(240deg) translateZ(400px);
+  background-image: url("../images/categories/chilango-skate3.jpg");
+} 
+.f {
+  transform: rotateY(300deg) translateZ(400px);
+  background-image: url("../images/categories/chilango-skate4.jpg");
+}
+/* botones para carrusel */
+.next, .prev { /* buscar como poner los triangulitos */
+  color:rgba(37, 105, 184, 1);
+  /* background-color: rgba(0, 43, 92, 1); */
+  position: fixed;
+  font-size: 60px;
+  height: 100px;
+  width: 50px;
+  top: 30px;
+  border-radius: 5px;
+  /* padding:10px; */
+  cursor: pointer;
+  /* background: transparent; */
+
+}
+.next{
+  left:480px;
+}
+.prev{
+  right: 475px;
+}
+
+/* .next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+  box-shadow: 0 1px 0 #999;
+} */
+/* .next { right: 5em; }
+.prev { left: 5em; } */
+/* 
+.section-card-categories {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: 0.25rem;
+}
+.section-container .categories-content {
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 25px;
+}
+.filter-text {
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+ */
+/* @media only screen and (min-device-width: 280px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  header nav .navbar-collapse .navbar-nav .nav-letra {
+    font-size: 50px!important;
+  }
+  header{
+    min-height: 6vh!important;
+    height: auto;
+  }
+  section .categories-content aside{
+    display: none;
+  }
+  .section-container .title-categories {
+    font-size: 150px;
+  }
+  .filter-text {
+    font-size: 35px;
+    text-align: center;
+  }
+} */
